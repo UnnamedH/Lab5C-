@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
+#include <cmath>
 using namespace std;
 
 struct Adress {
@@ -67,7 +68,7 @@ void MediumLevel() {
     for (int i = 0; i < col; i++) {
         sum = sum + num[i];
     }
-    cout << endl << "Модуль суммы чисел: " << pow(sum, 2);//модуль суммы чисел 
+    cout << endl << "Модуль суммы чисел: " << abs(sum);//модуль суммы чисел 
    
     on.close();
 }
